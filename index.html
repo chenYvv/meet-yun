@@ -376,7 +376,7 @@ img {
 Vue.component('countdown', {
   template: `
   <section class="countdown">
-    <img src='http://prhhzph9b.bkt.clouddn.com/2.jpg' width='70%' >
+    <img src='./img/2.jpg' width='70%' >
     <div v-show="!expired" class="timer">
       <div class="box">
         <div class="spacer"></div>
@@ -436,7 +436,7 @@ Vue.component('countdown', {
     this.i++;
     if ( el[0] !== undefined ) {
       if ( this.i%3 == 0 ) {
-        el[0].src = 'http://prhhzph9b.bkt.clouddn.com/' + this.random(1,20) + '.jpg' ; 
+        el[0].src = './img/' + this.random(1,21) + '.jpg' ; 
       }
     }
 
